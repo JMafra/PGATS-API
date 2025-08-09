@@ -4,7 +4,7 @@ const { users } = require('../model/userModel');
 function transferValue(from, to, value) {
   const sender = users.find(u => u.username === from);
   const recipient = users.find(u => u.username === to);
-  if (!sender || !recipient) return { error: 'Usuário remetente,  destinatário não encontrado.' };
+  if (!sender || !recipient) return { error: 'Usuário remetente ou destinatário não encontrado.' };
   if (!recipient.favorecido && value >= 5000) {
     return { error: 'Transferências acima de R$ 5.000,00 só podem ser feitas para favorecidos.' };
   }
