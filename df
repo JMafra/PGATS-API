@@ -1,0 +1,11 @@
+[33mcommit 30d932cacf6ee00ec6c47bb5ecf2e36067c33877[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Juliana <jmafra.pe@gmail.com>
+Date:   Sat Aug 9 16:08:34 2025 -0300
+
+    Adicionei o primeiro teste para validar o controller
+
+[33mcommit 7478c0a38cbe0db25e1015745032b2bf150ec51e[m
+Author: Juliana <jmafra.pe@gmail.com>
+Date:   Sat Aug 9 13:59:10 2025 -0300
+
+    Adicionando os primeiros arquivos do projeto
