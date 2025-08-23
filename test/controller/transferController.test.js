@@ -44,9 +44,39 @@ describe('Transfer Controller', () => {
           sinon.restore();
 
         });
+
+     /*   it('Usando Mocks: Quando informo valores validos eu tenho sucesso com 201 CREATED ', async  () => {
+          // Mocar apenas a função transfer do Service
+          const transferServiceMock = sinon.stub(transferService, 'transferValue') 
+          transferServiceMock.returns({
+            success: true,
+            transfer: {
+              from: "mafra",
+              to: "arthur",
+              value: 100,
+              date: new Date().toISOString()
+            }
+          });
+
+          const resposta = await request(app)
+            .post('/transfers')
+            .send({
+              from: "mafra",
+              to: "arthur",
+              value: 100
+            });
+          expect(resposta.status).to.equal(201);
+          expect(resposta.body).to.have.property('success', true);
+          expect(resposta.body).to.have.property('transfer');
+          expect(resposta.body.transfer).to.include({
+            from: 'mafra',
+            to: 'arthur',
+            value: 100
+          });
+          // Reset do Mock
+          sinon.restore();
+        }); */
     });
 
-    describe('GET /transfers', () => {
-        
-    });
+    
 });
